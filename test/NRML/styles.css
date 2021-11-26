@@ -321,6 +321,10 @@ span.right-arrow {
     width: 14px;;
 }
 
+.sort-popup, .filter-popup, .bottom-filter {
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
     .sidebar {
         display: none;
@@ -335,13 +339,218 @@ span.right-arrow {
         flex-wrap: wrap;
         flex: 0 0 100% !important;
         max-width: 100% !important;
-        padding: 20px !important;
+        padding: 20px;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .product-item-container {
-        width: 33.33%;
-        height: auto;
+    .search-bar-inner {
+        margin: 0px 15px 0px 15px;
+        padding: 13px 0px 10px;
     }
+
+    span.search-icon {
+        background-image: url(https://d354wf6w0s8ijx.cloudfront.net/assets/search-icon.svg?v=W8C8X2P7);
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        top: 21px;
+        left: 29px;
+        background-size: 20px;
+    }
+
+    .product-item-container {
+        width: 50%;
+        height: auto;
+
+    }
+
+    .wrapper {
+        position: relative;
+    }
+
+    .view, .size {
+        opacity: 1;
+    }
+
+    .option {
+        padding-bottom: 5px;
+        margin-left: 0px;
+        margin-right: 3px;
+    }
+
+    .product-grid {
+        padding: 10px !important;
+    }
+
+    .product-item-container {
+        padding: 15px 7.5px 15px 7.5px;
+    }
+
+    .view button {
+        padding: 5px 2px;
+    }
+
+    .size {
+        font-size: 70%;
+        margin-left: 5px;
+        display: none;
+
+    }
+
+    .product-item-vendor, .product-item-title h3, .product-item-price {
+        font-size: 80%;
+        margin-left: 0px;
+        margin-bottom: 2px;
+    }
+
+    .bottom-filter {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: black;
+        display: flex;
+        width: 100%;
+    }
+
+    .bottom-filter-popup {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: black;
+        display: flex;
+        width: 100%;
+    }
+
+    .apply, .reset {
+        color: white;
+        width: 50%;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 14px;
+    }
+
+    .sort-by, .filter-by {
+        color: white;
+        width: 50%;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 14px;
+    }
+
+    .sort-by i, .filter-by i {
+        font-size: 15px;
+        margin-right: 2px;
+
+    }
+
+    .reset {
+        border-left: 1px solid #ffffff66;
+    }
+
+    .filter-by {
+        border-left: 1px solid #ffffff66;
+    }
+
+    .filter-popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: white;
+        z-index: 99;
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+
+    .sort-popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #00000085;
+        z-index: 99;
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+
+    .sort-popup-inner {
+        height: 45%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        position: fixed;
+    }
+
+    .filter-popup-title {
+        font-size: 26px;
+        position: relative;
+        line-height: 24px;
+        font-weight: 500;
+        padding: 14px 0px;
+        border-bottom: 1px solid #e9e9ed;
+    }
+
+    i.fas.fa-times {
+        right: 0px;
+        position: absolute;
+        font-size: 22px;
+    }
+
+    .filter-title {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 700;
+
+    }
+
+    .filter-popup-inner {
+        margin: 30px 0px 10px 25px;
+        padding-right: 25px;
+        max-height: 85%;
+        overflow-y: auto;
+    }
+
+    .filter-inner {
+        border: 1px solid #e9e9ed;
+        margin: 20px 0;
+        padding: 15px 15px 0px 15px;
+    }
+
+    .filter-item-container {
+
+        border-bottom: 0px solid #e9e9ed;
+    }
+
+    .sort-popup-title {
+        margin: 10px 20px;
+        text-transform: uppercase;
+        font-size: 18px;
+        border-bottom: 1px solid #e9e9ed;
+        font-weight: 700;
+    }
+
+    .sopl {
+        margin: 12px 0;
+        font-size: 17px;
+
+    }
+
+    .sopl i {
+        margin: 0px 15px 0 25px;
+    }
+
+    .bottom-filter input {
+        display: none;
+    }
+
 }
