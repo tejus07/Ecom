@@ -488,7 +488,7 @@ span.right-arrow {
         left: 0;
         right: 0;
         background-color: white;
-        position: fixed;
+        position: absolute;
     }
 
     .filter-popup-title {
