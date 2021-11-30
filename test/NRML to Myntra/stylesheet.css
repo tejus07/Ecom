@@ -411,9 +411,9 @@ span.filter-tiltle-bg{
     margin-bottom: 5px;
 }
 
-input[type="checkbox"] {
+/*input[type="checkbox"] {
     margin-right: 5px;
-}
+}*/
 
 .filter-item-container::-webkit-scrollbar {
     width: 0.1em;
@@ -437,6 +437,7 @@ input[type="checkbox"] {
     align-items: center;
     justify-content: center;
 }
+
 
 .checkbox i {
     font-size: 11px;
@@ -468,6 +469,31 @@ span.count {
     font-size: 12px;
     margin-right: 5px;
 
+}
+
+.filter-popup-v2 {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    z-index: 3;
+}
+
+.filter-popup-v2-inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filter-popup-v2-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-popup-v2 input[type="checkbox"] {
+    display: none;
+    opacity: 0;
 }
 
 .bubble-filter {
